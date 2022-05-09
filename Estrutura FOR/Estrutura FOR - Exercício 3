@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int n = 0;
+		double a, b, c, media;
+
+		n = sc.nextInt();
+		for (int x = 0; x < n; x++) {
+
+			a = sc.nextDouble();
+			b = sc.nextDouble();
+			c = sc.nextDouble();
+			media = (a * 2.0 + b * 3.0 + c * 5.0) / 10;
+			System.out.printf("%2.1f",media);
+
+		}
+		sc.close();
+	}
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		int n, a, b;
+		double div;
+
+		n = sc.nextInt();
+		for (int x = 0; x <= n; x++) {
+
+			a = sc.nextInt();
+			b = sc.nextInt();
+			if (b == 0) {
+				System.out.printf("Divisao impossivel");
+			}
+      else {
+				div = (double) a / b;
+				System.out.printf("%.1f", div);
+			}
+		}
+		sc.close();
+	}
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {	
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double a, b, c,areaTR, areaC, areaT, areaQ, areaR, pi = 3.14159;
+		
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();	
+		
+		areaTR = a * c / 2.0;
+		areaC = pi * c * c;
+		areaT = (a + b)*c / 2.0;
+		areaQ = b * b;
+		areaR = a * b;
+		
+		System.out.printf("TRIANGULO = R$ %.3f%n", areaTR);
+		System.out.printf("CIRCULO = R$ %.3f%n", areaC);
+		System.out.printf("TRAPEZIO = R$ %.3f%n", areaT);
+		System.out.printf("QUADRADO = R$ %.3f%n", areaQ);
+		System.out.printf("RETANGULO = R$ %.3f%n", areaR);
+		
+		sc.close();
+	}
+}
