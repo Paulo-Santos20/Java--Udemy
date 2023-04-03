@@ -1,0 +1,35 @@
+.book {
+	margin: 50px auto;
+	width: 400px;
+	height: 600px;
+	background-color: #f7f7f7;
+	position: relative;
+}
+
+.cover {
+	background-image: url('cover.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: transform 1s;
+}
+
+.page {
+	background-color: #fff;
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	display: none;
+}
+
+.page.active {
+	display: block;
+}
+
+
